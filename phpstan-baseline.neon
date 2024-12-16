@@ -1,0 +1,11 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\$messageFactory of method Yproximite\\\\Payum\\\\Sogecommerce\\\\Api\\:\\:__construct\\(\\) has invalid type Http\\\\Message\\\\MessageFactory\\.$#"
+			count: 1
+			path: src/Api.php
+
+		-
+			message: "#^Property Yproximite\\\\Payum\\\\Sogecommerce\\\\Api\\:\\:\\$messageFactory has unknown class Http\\\\Message\\\\MessageFactory as its type\\.$#"
+			count: 1
+			path: src/Api.php

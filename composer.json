@@ -1,0 +1,39 @@
+{
+    "name": "yproximite/payum-sogecommerce",
+    "description": "Sogecommerce gateway for Payum",
+    "keywords": ["payum", "payment", "sogecommerce"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "payum/core": "^1.7.5"
+    },
+    "require-dev": {
+        "php-http/guzzle6-adapter": "^1.0",
+        "phpstan/phpstan": "^1.12.12",
+        "phpstan/phpstan-strict-rules": "^1.6.1",
+        "friendsofphp/php-cs-fixer": "^3.65.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yproximite\\Payum\\Sogecommerce\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yproximite\\Payum\\Sogecommerce\\Tests\\": "tests/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".github",
+            ".php-cs-fixer.dist.php",
+            ".php-version",
+            "phpstan.neon",
+            "phpstan-baseline.neon"
+        ]
+    }
+}
